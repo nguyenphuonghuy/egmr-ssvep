@@ -1,0 +1,408 @@
+{
+ "seed": 20261107,
+ "lop_b": {
+  "oacca_goc": {
+   "cca_1s": 62.78571428571429,
+   "oacca_1s": 88.45238095238096,
+   "oacca_tru_cca_1s": {
+    "tb": 25.666666666666664,
+    "thap": 21.636904761904763,
+    "cao": 30.17492061359658
+   },
+   "Q_cca": 115.43048947993883,
+   "Q_oacca": 177.60858860825854,
+   "tang_Q": 0.5386627000236877,
+   "cong_bo_tom_tat": {
+    "cca": 94.6,
+    "oacca": 158.87,
+    "tang": 0.6793868921775901
+   }
+  },
+  "sfda_lo": {
+   "tinh": 70.58333333333331,
+   "sfda": 91.30952380952382,
+   "sfda_tru_tinh": {
+    "tb": 20.726190476190478,
+    "thap": 15.649760928195617,
+    "cao": 28.74381604999001
+   },
+   "cong_bo_bang_1": {
+    "tinh": 70.61,
+    "sfda": 92.39,
+    "tang": 21.78
+   },
+   "nhanh_fbcca": 4,
+   "khong_mang": 1
+  }
+ },
+ "lop_c": {
+  "benchmark": {
+   "1.0": {
+    "sau": {
+     "tb": {
+      "E4": 82.2,
+      "E0": 80.11428571428573,
+      "OACCA": 73.0142857142857,
+      "CCA": 55.42857142857144,
+      "SFDA": 86.92857142857142,
+      "tinh": 71.11428571428571
+     },
+     "H5": {
+      "tb": 9.185714285714285,
+      "thap": 1.700000000000001,
+      "cao": 15.685714285714285,
+      "xep": "hon"
+     },
+     "H6": {
+      "tb": -4.728571428571428,
+      "thap": -8.842857142857143,
+      "cao": -2.1857142857142846,
+      "xep": "kem"
+     },
+     "OACCA_tru_CCA": {
+      "tb": 17.585714285714285,
+      "thap": 13.571428571428571,
+      "cao": 21.771428571428572
+     },
+     "SFDA_tru_tinh": {
+      "tb": 15.814285714285715,
+      "thap": 11.77142857142857,
+      "cao": 22.057142857142857
+     },
+     "E0_tru_SFDA": {
+      "tb": -6.814285714285713,
+      "thap": -11.214285714285714,
+      "cao": -3.985714285714285
+     }
+    },
+    "phien": {
+     "tb": {
+      "E4": 79.82142857142858,
+      "E0": 78.08333333333331,
+      "OACCA": 70.9047619047619,
+      "CCA": 55.05952380952381,
+      "SFDA": 83.76190476190476,
+      "tinh": 70.58333333333331
+     },
+     "H5": {
+      "tb": 8.916666666666666,
+      "thap": 1.2464539061165336,
+      "cao": 15.6977069834121,
+      "xep": "hon"
+     },
+     "H6": {
+      "tb": -3.9404761904761902,
+      "thap": -7.362166979397433,
+      "cao": -1.8156269449206688,
+      "xep": "kem"
+     },
+     "OACCA_tru_CCA": {
+      "tb": 15.845238095238093,
+      "thap": 12.011904761904763,
+      "cao": 19.773809523809526
+     },
+     "SFDA_tru_tinh": {
+      "tb": 13.178571428571429,
+      "thap": 9.809523809523808,
+      "cao": 18.380952380952387
+     },
+     "E0_tru_SFDA": {
+      "tb": -5.678571428571429,
+      "thap": -9.345238095238095,
+      "cao": -3.321428571428571
+     }
+    },
+    "chi_phi": {
+     "oacca_suy_luan": 5964450,
+     "oacca_cap_nhat": 252095,
+     "sfda_suy_luan": 892250,
+     "sfda_hoc_tb_moi_quyet_dinh": 49702812857.14286,
+     "sfda_so_vong_tb_moi_moc": 52.402857142857144,
+     "sfda_du_phong_ti_le": 0.06,
+     "sfda_nhanh_fbcca_ti_le": 0.15428571428571428,
+     "ti_le_suy_luan_OACCA_tren_E4": 6.684729616138974,
+     "ti_le_tong_OACCA_tren_E4": 3.4925391162673107,
+     "ti_le_PHAN_HOC_SFDA_tren_nen_E4": 55990.55182735481,
+     "pham_vi": "DU TOAN phep nhan chinh, khong phai MAC chinh xac. OACCA: QR, SVD, tri rieng tinh theo bac; cap nhat la can tren. SFDA: chi phan hoc (50 buoc x so vong x so mau), KHONG gom luot xuoi kiem nhan vong, chon nhan dau, FBCCA, silhouette, lang gieng, nen ti le SFDA la can duoi cua chi phi cap nhat. Ti le suy luan so suy luan; ti le tong so (suy luan + cap nhat) voi (suy luan + nen)."
+    }
+   },
+   "0.6": {
+    "sau": {
+     "tb": {
+      "E4": 61.41428571428571,
+      "E0": 59.32857142857143,
+      "OACCA": 32.97142857142857,
+      "CCA": 20.985714285714284,
+      "SFDA": 64.05714285714285,
+      "tinh": 49.5
+     },
+     "H5": {
+      "tb": 28.442857142857143,
+      "thap": 21.014285714285716,
+      "cao": 35.68571428571428,
+      "xep": "hon"
+     },
+     "H6": {
+      "tb": -2.6428571428571432,
+      "thap": -6.5285714285714285,
+      "cao": 1.4571428571428566,
+      "xep": "chua phan biet"
+     },
+     "OACCA_tru_CCA": {
+      "tb": 11.985714285714286,
+      "thap": 7.642857142857142,
+      "cao": 17.185714285714287
+     },
+     "SFDA_tru_tinh": {
+      "tb": 14.557142857142857,
+      "thap": 10.014285714285714,
+      "cao": 19.514285714285716
+     },
+     "E0_tru_SFDA": {
+      "tb": -4.728571428571429,
+      "thap": -8.642857142857142,
+      "cao": -1.4285714285714293
+     }
+    },
+    "phien": {
+     "tb": {
+      "E4": 58.845238095238095,
+      "E0": 57.107142857142854,
+      "OACCA": 30.571428571428577,
+      "CCA": 20.833333333333336,
+      "SFDA": 61.04761904761904,
+      "tinh": 48.91666666666666
+     },
+     "H5": {
+      "tb": 28.273809523809526,
+      "thap": 21.175614504392563,
+      "cao": 34.964285714285715,
+      "xep": "hon"
+     },
+     "H6": {
+      "tb": -2.2023809523809517,
+      "thap": -5.44047619047619,
+      "cao": 1.2142857142857137,
+      "xep": "chua phan biet"
+     },
+     "OACCA_tru_CCA": {
+      "tb": 9.738095238095235,
+      "thap": 5.988095238095238,
+      "cao": 14.178571428571427
+     },
+     "SFDA_tru_tinh": {
+      "tb": 12.13095238095238,
+      "thap": 8.345238095238095,
+      "cao": 16.26190476190476
+     },
+     "E0_tru_SFDA": {
+      "tb": -3.9404761904761885,
+      "thap": -7.202380952380949,
+      "cao": -1.1904761904761891
+     }
+    },
+    "chi_phi": {
+     "oacca_suy_luan": 3649950,
+     "oacca_cap_nhat": 166595,
+     "sfda_suy_luan": 535350,
+     "sfda_hoc_tb_moi_quyet_dinh": 31028222571.42857,
+     "sfda_so_vong_tb_moi_moc": 53.462857142857146,
+     "sfda_du_phong_ti_le": 0.02857142857142857,
+     "sfda_nhanh_fbcca_ti_le": 0.06857142857142857
+    }
+   }
+  },
+  "beta": {
+   "1.0": {
+    "sau": {
+     "tb": {
+      "E4": 64.85714285714286,
+      "E0": 63.86904761904763,
+      "OACCA": 68.55952380952382,
+      "CCA": 49.07142857142857,
+      "SFDA": 66.38095238095238,
+      "tinh": 55.00000000000001
+     },
+     "H5": {
+      "tb": -3.7023809523809526,
+      "thap": -9.874319706072585,
+      "cao": 1.738095238095238,
+      "xep": "chua phan biet"
+     },
+     "H6": {
+      "tb": -1.5238095238095242,
+      "thap": -4.547619047619048,
+      "cao": 1.1071428571428572,
+      "xep": "chua phan biet"
+     },
+     "OACCA_tru_CCA": {
+      "tb": 19.48809523809524,
+      "thap": 16.297619047619047,
+      "cao": 22.73809523809524
+     },
+     "SFDA_tru_tinh": {
+      "tb": 11.38095238095238,
+      "thap": 8.083333333333332,
+      "cao": 15.551207519808681
+     },
+     "E0_tru_SFDA": {
+      "tb": -2.5119047619047623,
+      "thap": -5.6309523809523805,
+      "cao": 0.2142857142857147
+     }
+    },
+    "phien": {
+     "tb": {
+      "E4": 62.04464285714284,
+      "E0": 61.30357142857142,
+      "OACCA": 65.90178571428571,
+      "CCA": 48.61607142857143,
+      "SFDA": 63.18750000000002,
+      "tinh": 54.65178571428571
+     },
+     "H5": {
+      "tb": -3.857142857142857,
+      "thap": -10.062510734225558,
+      "cao": 1.5892857142857142,
+      "xep": "chua phan biet"
+     },
+     "H6": {
+      "tb": -1.1428571428571428,
+      "thap": -3.410714285714285,
+      "cao": 0.8303571428571429,
+      "xep": "chua phan biet"
+     },
+     "OACCA_tru_CCA": {
+      "tb": 17.285714285714285,
+      "thap": 14.410714285714286,
+      "cao": 20.178571428571427
+     },
+     "SFDA_tru_tinh": {
+      "tb": 8.535714285714286,
+      "thap": 6.0625,
+      "cao": 11.669642857142858
+     },
+     "E0_tru_SFDA": {
+      "tb": -1.8839285714285714,
+      "thap": -4.214285714285714,
+      "cao": 0.1696428571428575
+     }
+    },
+    "chi_phi": {
+     "oacca_suy_luan": 5964450,
+     "oacca_cap_nhat": 252095,
+     "sfda_suy_luan": 892250,
+     "sfda_hoc_tb_moi_quyet_dinh": 32012346428.571426,
+     "sfda_so_vong_tb_moi_moc": 48.792857142857144,
+     "sfda_du_phong_ti_le": 0.05238095238095238,
+     "sfda_nhanh_fbcca_ti_le": 0.2261904761904762,
+     "ti_le_suy_luan_OACCA_tren_E4": 6.684729616138974,
+     "ti_le_tong_OACCA_tren_E4": 3.4925391162673107,
+     "ti_le_PHAN_HOC_SFDA_tren_nen_E4": 36062.1228214165,
+     "pham_vi": "DU TOAN phep nhan chinh, khong phai MAC chinh xac. OACCA: QR, SVD, tri rieng tinh theo bac; cap nhat la can tren. SFDA: chi phan hoc (50 buoc x so vong x so mau), KHONG gom luot xuoi kiem nhan vong, chon nhan dau, FBCCA, silhouette, lang gieng, nen ti le SFDA la can duoi cua chi phi cap nhat. Ti le suy luan so suy luan; ti le tong so (suy luan + cap nhat) voi (suy luan + nen)."
+    }
+   },
+   "0.6": {
+    "sau": {
+     "tb": {
+      "E4": 48.08333333333333,
+      "E0": 47.333333333333336,
+      "OACCA": 33.357142857142854,
+      "CCA": 21.511904761904763,
+      "SFDA": 46.654761904761905,
+      "tinh": 40.89285714285714
+     },
+     "H5": {
+      "tb": 14.726190476190473,
+      "thap": 8.666666666666668,
+      "cao": 20.408090124062454,
+      "xep": "hon"
+     },
+     "H6": {
+      "tb": 1.4285714285714288,
+      "thap": -1.391333576291844,
+      "cao": 4.025392289410147,
+      "xep": "chua phan biet"
+     },
+     "OACCA_tru_CCA": {
+      "tb": 11.845238095238095,
+      "thap": 8.023809523809524,
+      "cao": 16.112559644355095
+     },
+     "SFDA_tru_tinh": {
+      "tb": 5.761904761904762,
+      "thap": 3.0357142857142856,
+      "cao": 9.035714285714286
+     },
+     "E0_tru_SFDA": {
+      "tb": 0.6785714285714283,
+      "thap": -2.1191997867596535,
+      "cao": 3.1785714285714284
+     }
+    },
+    "phien": {
+     "tb": {
+      "E4": 46.0,
+      "E0": 45.43750000000001,
+      "OACCA": 31.21428571428571,
+      "CCA": 21.276785714285715,
+      "SFDA": 44.92857142857142,
+      "tinh": 40.60714285714285
+     },
+     "H5": {
+      "tb": 14.785714285714286,
+      "thap": 9.107142857142858,
+      "cao": 20.308654947034466,
+      "xep": "hon"
+     },
+     "H6": {
+      "tb": 1.0714285714285718,
+      "thap": -1.0446428571428572,
+      "cao": 3.0178571428571432,
+      "xep": "chua phan biet"
+     },
+     "OACCA_tru_CCA": {
+      "tb": 9.9375,
+      "thap": 6.607142857142856,
+      "cao": 13.660714285714288
+     },
+     "SFDA_tru_tinh": {
+      "tb": 4.321428571428571,
+      "thap": 2.2767857142857144,
+      "cao": 6.785714285714286
+     },
+     "E0_tru_SFDA": {
+      "tb": 0.508928571428572,
+      "thap": -1.5750714161274013,
+      "cao": 2.392857142857143
+     }
+    },
+    "chi_phi": {
+     "oacca_suy_luan": 3649950,
+     "oacca_cap_nhat": 166595,
+     "sfda_suy_luan": 535350,
+     "sfda_hoc_tb_moi_quyet_dinh": 17272230000.0,
+     "sfda_so_vong_tb_moi_moc": 45.02619047619048,
+     "sfda_du_phong_ti_le": 0.02142857142857143,
+     "sfda_nhanh_fbcca_ti_le": 0.07380952380952381
+    }
+   }
+  }
+ },
+ "tuyen_bo": {
+  "H5": {
+   "tung_bo": {
+    "benchmark": "hon",
+    "beta": "chua phan biet"
+   },
+   "cau": "neu rieng tung bo: benchmark hon, beta chua phan biet; khong tuyen bo hon chung, khong suy ngang nhau"
+  },
+  "H6": {
+   "tung_bo": {
+    "benchmark": "kem",
+    "beta": "chua phan biet"
+   },
+   "cau": "neu rieng tung bo; E4 kem SFDA-TT tren: benchmark; bo con lai: beta chua phan biet"
+  }
+ }
+}

@@ -1,0 +1,28 @@
+#!/bin/bash
+#PBS -N ton_b2seed_kiem
+#PBS -q sharedgpu
+#PBS -l select=1:ncpus=8:mem=32gb:gpu_slots=1
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o /gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop/logs/pbs/
+# Kiem truoc khi chay them seed cho B2 (uoc 45 phut). Thoat ma khac 0 neu mot phep kiem lech; cac job chinh phu thuoc afterok.
+set -euo pipefail
+P=/gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop; PY=/gpfs0/users/gv_nphuy/envs/eeg-torch27/bin/python
+exec > $P/logs/b2seed_kiem_${PBS_JOBID}.log 2>&1
+export CUDA_MPS_PIPE_DIRECTORY=/dev/null OMP_NUM_THREADS=8 MKL_NUM_THREADS=8 PYTHONUNBUFFERED=1
+export B1_ROOT_BENCHMARK=$P/data/benchmark
+cd $P
+S=scripts_seed; O=results/b2e4r_seed/kiem_${PBS_JOBID%%.*}; mkdir -p $O
+nvidia-smi --query-gpu=name,memory.total --format=csv > $O/gpu.txt; sha256sum $S/*.py jobs/b2seed_*.pbs > $O/sha256.txt
+# K1: huan luyen lai BETA fold 1 voi seed mac dinh
+$PY $S/global_dnn_huanluyen.py --ds beta --T 1.0 --out $O/nen_beta_f1 --folds 1::70
+# K2: b2e4r --bo-json-goc, seed mac dinh, Benchmark fold 1-2
+$PY $S/b2e4r.py --ds benchmark --T 1.0 --trongso results/b1v7_lo2/T10 \
+    --json-ktnr results/b2e4r_goc/benchmark_ktnr-buoc1_T10_seed20261107_20261115.json --bo-json-goc --folds 1-2 --out $O/benchmark_b2e4r_f12.json
+# K3: ktnr_buoc1, seed mac dinh, Benchmark 2 fold
+$PY $S/ktnr_buoc1.py --ds benchmark --T 1.0 --trongso results/b1v7_lo2/T10 --folds 2 --out $O/benchmark_ktnr_f12.json
+# K4: seed moi, Dong fold 1, chay thong huan luyen va KTN-R
+B2_SEED=20261108 $PY $S/global_dnn_huanluyen.py --ds dong --T 1.0 --out $O/nen_dong_s08_f1 --folds 1::59
+B2_SEED=20261108 $PY $S/ktnr_buoc1.py --ds dong --T 1.0 --trongso $O/nen_dong_s08_f1 --folds 1 --out $O/dong_ktnr_s08_f1.json
+$PY $S/so_kiem_seed.py $O
+echo XONG

@@ -1,0 +1,38 @@
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+fold 1 chay thong 134 s
+fold 2 chay thong 196 s
+fold 3 chay thong 251 s
+fold 4 chay thong 311 s
+fold 5 chay thong 368 s
+fold 6 chay thong 428 s
+fold 7 chay thong 486 s
+fold 8 chay thong 545 s
+fold 9 chay thong 606 s
+fold 10 chay thong 662 s
+fold 11 chay thong 720 s
+fold 12 chay thong 778 s
+fold 13 chay thong 839 s
+fold 14 chay thong 896 s
+fold 15 chay thong 957 s
+fold 16 chay thong 1014 s
+fold 17 chay thong 1075 s
+fold 18 chay thong 1133 s
+fold 19 chay thong 1190 s
+fold 20 chay thong 1247 s
+fold 21 chay thong 1308 s
+fold 22 chay thong 1365 s
+fold 23 chay thong 1426 s
+fold 24 chay thong 1483 s
+fold 25 chay thong 1543 s
+fold 26 chay thong 1600 s
+fold 27 chay thong 1655 s
+fold 28 chay thong 1716 s
+fold 29 chay thong 1773 s
+fold 30 chay thong 1835 s
+fold 31 chay thong 1892 s
+fold 32 chay thong 1953 s
+fold 33 chay thong 2011 s
+fold 34 chay thong 2069 s
+fold 35 chay thong 2126 s
+xong 2130.6464467048645

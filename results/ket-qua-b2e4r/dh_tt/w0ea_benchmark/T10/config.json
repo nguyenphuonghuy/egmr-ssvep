@@ -1,0 +1,21 @@
+{
+ "seed": 20261107,
+ "ds": "benchmark",
+ "loc": "causal",
+ "T": 1.0,
+ "epochs": 1000,
+ "lo": 100,
+ "nch": 22,
+ "dropout_cuoi": 0.95,
+ "subjects": 0,
+ "ea": "co",
+ "tau": 2.0,
+ "script_sha256": "327ce5dcccd7e5f2e7a0e4f492c1e3563c2bbe8c4f6ae068a944ae1db00ce1db",
+ "dh_tt_loi_sha256": "bd118478968e5a3a41b6d93602ab8fe9ff0a6061713c139f519635d5167fbd0d",
+ "global_dnn_sha256": "6286239a09b7172bbdf5d80d8808a83d3cf6d2c48fde42eb9f1c18a60bbdca22",
+ "b1_diem_sha256": "d4d551c474c310e273a64360a6412530aeee60464a6dc47d85e07e613cb10d71",
+ "du_lieu_dong_sha256": null,
+ "kep": 1e-06,
+ "torch": "2.7.1+cu118",
+ "root_du_lieu": "/gpfs0/users/gv_dnton/datasets/ssvep/benchmark"
+}

@@ -1,0 +1,49 @@
+scripts_d6/doi_thu_oacca.py: OK
+scripts_d6/doi_thu_sfda.py: OK
+d4d551c474c310e273a64360a6412530aeee60464a6dc47d85e07e613cb10d71  scripts_d6/b1_diem.py
+0f9ae7d2cf47683670272bfec3753aeb459ef56d41885fd0891b0a989e06a56e  scripts_d6/doi_thu_kiem.py
+d827a73a5fe390909ba93880635ebfa2eec95729bed14664482b95205e5ea1bc  scripts_d6/doi_thu_kiem_sfda.py
+1ee8d1ee1343d95ca0f00875c2adc21e20049df64a9f5ddf84e6cccde6408412  scripts_d6/doi_thu_oacca.py
+d3a184e37cc392b8f761584f7692672e0ab91c1c252007cd0d0ff0a89553a99c  scripts_d6/doi_thu_sfda.py
+6286239a09b7172bbdf5d80d8808a83d3cf6d2c48fde42eb9f1c18a60bbdca22  scripts_d6/global_dnn.py
+779ee14d93f6a2ef00ac4afe888e5bcee53bd0b8db48836139232897d0c770eb  jobs/d6_sfda_lo.pbs
+thiet bi: cuda
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+nguoi 1 xong 125 s
+nguoi 2 xong 190 s
+nguoi 3 xong 311 s
+nguoi 4 xong 359 s
+nguoi 5 xong 498 s
+nguoi 6 xong 550 s
+nguoi 7 xong 616 s
+nguoi 8 xong 674 s
+nguoi 9 xong 739 s
+nguoi 10 xong 827 s
+nguoi 11 xong 867 s
+nguoi 12 xong 903 s
+nguoi 13 xong 946 s
+nguoi 14 xong 1005 s
+nguoi 15 xong 1054 s
+nguoi 16 xong 1147 s
+nguoi 17 xong 1219 s
+nguoi 18 xong 1260 s
+nguoi 19 xong 1313 s
+nguoi 20 xong 1370 s
+nguoi 21 xong 1400 s
+nguoi 22 xong 1504 s
+nguoi 23 xong 1579 s
+nguoi 24 xong 1717 s
+nguoi 25 xong 1767 s
+nguoi 26 xong 1794 s
+nguoi 27 xong 1930 s
+nguoi 28 xong 2031 s
+nguoi 29 xong 2097 s
+nguoi 30 xong 2175 s
+nguoi 31 xong 2210 s
+nguoi 32 xong 2228 s
+nguoi 33 xong 2287 s
+nguoi 34 xong 2323 s
+nguoi 35 xong 2391 s
+xong 2391.2710766792297
+XONG

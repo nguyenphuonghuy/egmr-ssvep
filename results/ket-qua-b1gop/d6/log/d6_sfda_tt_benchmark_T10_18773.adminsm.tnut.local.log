@@ -1,0 +1,43 @@
+scripts_d6/doi_thu_oacca.py: OK
+scripts_d6/doi_thu_sfda.py: OK
+d4d551c474c310e273a64360a6412530aeee60464a6dc47d85e07e613cb10d71  scripts_d6/b1_diem.py
+0f9ae7d2cf47683670272bfec3753aeb459ef56d41885fd0891b0a989e06a56e  scripts_d6/doi_thu_kiem.py
+d827a73a5fe390909ba93880635ebfa2eec95729bed14664482b95205e5ea1bc  scripts_d6/doi_thu_kiem_sfda.py
+1ee8d1ee1343d95ca0f00875c2adc21e20049df64a9f5ddf84e6cccde6408412  scripts_d6/doi_thu_oacca.py
+d3a184e37cc392b8f761584f7692672e0ab91c1c252007cd0d0ff0a89553a99c  scripts_d6/doi_thu_sfda.py
+6286239a09b7172bbdf5d80d8808a83d3cf6d2c48fde42eb9f1c18a60bbdca22  scripts_d6/global_dnn.py
+1046e29c4d25afd6e1b4b549029cf2eb660d9ac588dc647c287f684de2abe1d3  jobs/d6_sfda_tt_benchmark_T10.pbs
+thiet bi: cuda
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+nguoi 1 xong 363 s
+nguoi 2 xong 668 s
+nguoi 3 xong 1492 s
+nguoi 4 xong 1904 s
+nguoi 5 xong 2507 s
+nguoi 6 xong 3000 s
+nguoi 7 xong 3459 s
+nguoi 8 xong 3855 s
+nguoi 9 xong 4363 s
+nguoi 10 xong 5027 s
+nguoi 11 xong 5510 s
+Traceback (most recent call last):
+  File "/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/scipy/io/matlab/_mio.py", line 39, in _open_file
+PermissionError: [Errno 13] Permission denied: '/gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop/data/benchmark/S12.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop/scripts_d6/doi_thu_sfda.py", line 266, in <module>
+    main()
+  File "/gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop/scripts_d6/doi_thu_sfda.py", line 230, in main
+    Xr, y, freqs = B.load_subject(ds, s, B.CH9)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop/scripts_d6/b1_diem.py", line 52, in load_subject
+    d = loadmat(os.path.join(c["root"], f"S{s}.mat"))["data"]          # ch,t,target,block
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/scipy/io/matlab/_mio.py", line 234, in loadmat
+  File "/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/contextlib.py", line 137, in __enter__
+  File "/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/scipy/io/matlab/_mio.py", line 17, in _open_file_context
+  File "/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/scipy/io/matlab/_mio.py", line 45, in _open_file
+PermissionError: [Errno 13] Permission denied: '/gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop/data/benchmark/S12.mat'

@@ -1,0 +1,84 @@
+scripts_d6/doi_thu_oacca.py: OK
+scripts_d6/doi_thu_sfda.py: OK
+d4d551c474c310e273a64360a6412530aeee60464a6dc47d85e07e613cb10d71  scripts_d6/b1_diem.py
+0f9ae7d2cf47683670272bfec3753aeb459ef56d41885fd0891b0a989e06a56e  scripts_d6/doi_thu_kiem.py
+d827a73a5fe390909ba93880635ebfa2eec95729bed14664482b95205e5ea1bc  scripts_d6/doi_thu_kiem_sfda.py
+1ee8d1ee1343d95ca0f00875c2adc21e20049df64a9f5ddf84e6cccde6408412  scripts_d6/doi_thu_oacca.py
+d3a184e37cc392b8f761584f7692672e0ab91c1c252007cd0d0ff0a89553a99c  scripts_d6/doi_thu_sfda.py
+6286239a09b7172bbdf5d80d8808a83d3cf6d2c48fde42eb9f1c18a60bbdca22  scripts_d6/global_dnn.py
+11e89c8ccf22f1f0fccc2a32a9b3eed4f8b10fe6282be01f7c0fb13223090cca  jobs/d6_sfda_tt_beta_T10.pbs
+thiet bi: cuda
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+nguoi 1 xong 287 s
+nguoi 2 xong 553 s
+nguoi 3 xong 716 s
+nguoi 4 xong 814 s
+nguoi 5 xong 942 s
+nguoi 6 xong 1126 s
+nguoi 7 xong 1241 s
+nguoi 8 xong 1376 s
+nguoi 9 xong 1523 s
+nguoi 10 xong 1635 s
+nguoi 11 xong 1737 s
+nguoi 12 xong 1893 s
+nguoi 13 xong 2057 s
+nguoi 14 xong 2189 s
+nguoi 15 xong 2322 s
+nguoi 16 xong 2448 s
+nguoi 17 xong 2564 s
+nguoi 18 xong 2899 s
+nguoi 19 xong 3049 s
+nguoi 20 xong 3144 s
+nguoi 21 xong 3284 s
+nguoi 22 xong 3430 s
+nguoi 23 xong 3749 s
+nguoi 24 xong 3921 s
+nguoi 25 xong 4106 s
+nguoi 26 xong 4215 s
+nguoi 27 xong 4357 s
+nguoi 28 xong 4479 s
+nguoi 29 xong 4657 s
+nguoi 30 xong 4868 s
+nguoi 31 xong 4969 s
+nguoi 32 xong 5067 s
+nguoi 33 xong 5172 s
+nguoi 34 xong 5322 s
+nguoi 35 xong 5463 s
+nguoi 36 xong 5601 s
+nguoi 37 xong 5742 s
+nguoi 38 xong 5865 s
+nguoi 39 xong 5998 s
+nguoi 40 xong 6102 s
+nguoi 41 xong 6196 s
+nguoi 42 xong 6456 s
+nguoi 43 xong 6595 s
+nguoi 44 xong 6705 s
+nguoi 45 xong 6828 s
+nguoi 46 xong 6951 s
+nguoi 47 xong 7040 s
+nguoi 48 xong 7167 s
+nguoi 49 xong 7381 s
+nguoi 50 xong 7455 s
+nguoi 51 xong 7570 s
+nguoi 52 xong 7820 s
+nguoi 53 xong 7955 s
+nguoi 54 xong 8092 s
+nguoi 55 xong 8221 s
+nguoi 56 xong 8396 s
+nguoi 57 xong 8617 s
+nguoi 58 xong 8748 s
+nguoi 59 xong 8835 s
+nguoi 60 xong 8971 s
+nguoi 61 xong 9069 s
+nguoi 62 xong 9191 s
+nguoi 63 xong 9388 s
+nguoi 64 xong 9489 s
+nguoi 65 xong 9568 s
+nguoi 66 xong 9691 s
+nguoi 67 xong 9909 s
+nguoi 68 xong 10010 s
+nguoi 69 xong 10130 s
+nguoi 70 xong 10291 s
+xong 10290.956518173218
+XONG

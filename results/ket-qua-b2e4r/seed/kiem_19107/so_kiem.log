@@ -1,0 +1,31 @@
+nap 70 nguoi (beta), T = 1.0, thiet bi cuda
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+fold 1: xong 277 s
+thiet bi: cuda | numpy 2.4.4 | torch 2.7.1+cu118
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+fold 1 chay thong 61 s
+fold 2 chay thong 65 s
+xong 65.48525977134705
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+fold 1: ktn 0.940 ktnr 0.915 | 48 s
+fold 2: ktn 0.895 ktnr 0.935 | 51 s
+xong 51.4027316570282
+nap 59 nguoi (dong), T = 1.0, thiet bi cuda
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+fold 1: xong 171 s
+/gpfs0/users/gv_nphuy/envs/eeg-torch27/lib/python3.11/site-packages/torch/nn/modules/conv.py:549: UserWarning: Using padding='same' with even kernel lengths and odd dilation may require a zero-padded copy of the input be created (Triggered internally at /pytorch/aten/src/ATen/native/Convolution.cpp:1036.)
+  return F.conv2d(
+fold 1: ktn 0.642 ktnr 0.683 | 55 s
+xong 54.92768096923828
+DAT  K1 trong so BETA fold 1
+DAT  K2 b2e4r fold 1
+DAT  K2 b2e4r fold 2
+DAT  K3 ktnr fold 1 (17 truong)
+DAT  K3 ktnr fold 2 (17 truong)
+DAT  K4 seed moi Dong fold 1 chay thong
+TONG LECH: 0 []
+XONG

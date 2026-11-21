@@ -1,0 +1,72 @@
+{
+ "ds": "nak",
+ "T": 1.0,
+ "che": "gt",
+ "du_nhanh": false,
+ "vong": 100,
+ "ns": 256,
+ "rfs": 256,
+ "NT": 12,
+ "Nh": 4,
+ "seed": 20261107,
+ "bat_dau_cua_so": 73,
+ "script_sha256": "225d3c30a954be088d976684ef593ecf85e45b38a79249b0c3e26778c85021d2",
+ "shim_sha256": "aa9dbabdf9f24b4e98f6e6d69fec05f903ef9ab76e0f88ac9003e0af2c10a7bc",
+ "goc_sha256": {
+  "CCA.py": "30575473e22c2c675c4160f890e938d8ff20ff793fe6a7dbb7dc99e78f2b339b",
+  "FBCCA.py": "914491edd98fcc730d718c60536b1d03648ce9a669948f6eb4a3e0260b0c13e6",
+  "FBTTCCA.py": "9eabf155e7c3efb496e126f08941d72cd32bc556871cb7fc7eb2c86b03cf3aea",
+  "config.py": "2fa667580cfb776b4b6e284f9133bce27465626942126eabd7881f2f126f4e9b",
+  "function.py": "9129fdc35f3d68abbc5ecc7034e0ff4230c3904b2817131f3f8c6b838ed7a81e",
+  "main.py": "943a62c034a3a7935b658895bc55e1195403dc9613f14be0f7078b77675e6784",
+  "model.py": "311b8de25754a95988819681b232ae5379f89fd4e0eadd30f0c65829b73b4b84"
+ },
+ "commit": "1660d42113d5721c5ec05d5f8b92aeabcd50c31f",
+ "list_freqs": [
+  9.25,
+  11.25,
+  13.25,
+  9.75,
+  11.75,
+  13.75,
+  10.25,
+  12.25,
+  14.25,
+  10.75,
+  12.75,
+  14.75
+ ],
+ "list_phase_pi": [
+  0.0,
+  0.0,
+  0.0,
+  0.5,
+  0.5,
+  0.5,
+  1.0,
+  1.0,
+  1.0,
+  1.5,
+  1.5,
+  1.5
+ ],
+ "kenh": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7
+ ],
+ "n_nguoi": 10,
+ "du_lieu": "/gpfs0/users/gv_dnton/datasets/ssvep/nakanishi2015",
+ "phien_ban": {
+  "numpy": "2.4.4",
+  "torch": "2.7.1+cu118",
+  "scipy": "1.17.1",
+  "sklearn": "1.9.0"
+ },
+ "ghi_chu_seed": "seed 20261107 + 1000 fold + round(10 T)"
+}

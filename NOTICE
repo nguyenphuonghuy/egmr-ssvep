@@ -1,0 +1,8 @@
+The following files are ports of third-party code released under the GNU General Public License v3.0 and are distributed under GPL-3.0:
+
+- code/doi_thu_sfda.py: port of osmanberke/SFDA-SSVEP-BCI (MATLAB, GPL-3.0).
+- code/doi_thu_oacca.py: port of edwin465/SSVEP-OACCA v1.2 (MATLAB, GPL-3.0).
+- code/global_dnn.py: PyTorch port of the Global DNN training code in osmanberke/Ensemble-of-DNNs (MATLAB, GPL-3.0).
+- code/ensemble_dnn.py: PyTorch port of osmanberke/Ensemble-of-DNNs (MATLAB, GPL-3.0).
+
+All other files are released under the MIT License (see LICENSE).

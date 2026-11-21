@@ -1,0 +1,15 @@
+{
+ "ds": "benchmark",
+ "T": 0.6,
+ "bien_the": "du",
+ "trongso": "",
+ "vong1": 0,
+ "vong2": 0,
+ "seed": 20261107,
+ "script_sha256": "2e307080e79dedba017ed3ed0f67cbff4148b731fd099b8c046255a70dd9007b",
+ "ma_phu_sha256": {
+  "global_dnn.py": "6286239a09b7172bbdf5d80d8808a83d3cf6d2c48fde42eb9f1c18a60bbdca22",
+  "global_dnn_thichnghi.py": "51040b5317ee2fe20ac7ca82f60d8713d1f9e20ad73eb9b7bd4abf3742afa257",
+  "b1_diem.py": "d4d551c474c310e273a64360a6412530aeee60464a6dc47d85e07e613cb10d71"
+ }
+}

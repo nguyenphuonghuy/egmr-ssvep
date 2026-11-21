@@ -1,0 +1,31 @@
+#!/bin/bash
+#PBS -N ton_b2seed
+#PBS -q sharedgpu
+#PBS -l select=1:ncpus=8:mem=32gb:gpu_slots=1
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o /gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop/logs/pbs/
+# Chay them seed cho phep so chinh EGM-R - UM-R o 1,0 s.
+# Dung: qsub -v SEED=20261108,DSS="benchmark dong" b2seed_chinh.pbs. Moi bo: huan luyen mang nen LOSO (luu state_dict tung fold),
+# KTN-R (UM-R), roi b2e4r (EGM-R). Log khong in do chinh xac.
+set -euo pipefail
+P=/gpfs0/users/gv_mtthai/projects/qldanc_ton_b1gop; PY=/gpfs0/users/gv_nphuy/envs/eeg-torch27/bin/python
+exec > $P/logs/b2seed_${SEED}_${PBS_JOBID}.log 2>&1
+export CUDA_MPS_PIPE_DIRECTORY=/dev/null OMP_NUM_THREADS=8 MKL_NUM_THREADS=8 PYTHONUNBUFFERED=1
+export B1_ROOT_BENCHMARK=$P/data/benchmark B2_SEED=$SEED
+cd $P
+S=scripts_seed; R=results/b2e4r_seed; mkdir -p $R
+H=$R/hoso_${SEED}_${PBS_JOBID%%.*}; mkdir $H
+nvidia-smi --query-gpu=name,memory.total --format=csv > $H/gpu.txt; sha256sum $S/*.py jobs/b2seed_*.pbs > $H/sha256.txt; $PY -m pip freeze > $H/env.lock.txt
+D=$(date +%Y%m%d)
+for DS in $DSS; do
+  N=results/nen_seed$SEED/$DS/T10
+  echo "== $DS seed $SEED: huan luyen $(date)"
+  $PY $S/global_dnn_huanluyen.py --ds $DS --T 1.0 --out $N
+  echo "== $DS: KTN-R $(date)"
+  $PY $S/ktnr_buoc1.py --ds $DS --T 1.0 --trongso $N --out $R/${DS}_ktnr-buoc1_T10_seed${SEED}_$D.json
+  echo "== $DS: EGM-R $(date)"
+  $PY $S/b2e4r.py --ds $DS --T 1.0 --trongso $N --json-ktnr $R/${DS}_ktnr-buoc1_T10_seed${SEED}_$D.json --bo-json-goc \
+      --out $R/${DS}_b2e4r_T10_seed${SEED}_$D.json
+done
+echo "XONG $(date)"
